@@ -1,0 +1,46 @@
+syntax = "proto3";
+package moto;
+
+// Définition du message moto
+message Moto {
+    string id = 1;
+    string marque = 2;
+    string modele = 3;
+    string description = 4;
+    // Ajouter d'autres champs de données pour les motos au besoin
+}
+
+// Définition des messages de requête et de réponse pour les méthodes
+message GetMotoRequest {
+    string moto_id = 1;
+}
+
+message GetMotoResponse {
+    Moto moto = 1;
+}
+
+message SearchMotosRequest {
+    string query = 1;
+}
+
+message SearchMotosResponse {
+    repeated Moto motos = 1;
+}
+
+message AddMotoRequest {
+    string marque = 1;
+    string modele = 2;
+    string description = 3;
+}
+
+message AddMotoResponse {
+    Moto moto = 1;
+}
+
+// Définition du service de motos
+service MotoService {
+    rpc GetMoto(GetMotoRequest) returns (GetMotoResponse);
+    rpc SearchMotos(SearchMotosRequest) returns (SearchMotosResponse);
+    rpc AddMoto(AddMotoRequest) returns (AddMotoResponse);
+    // Ajouter d'autres méthodes au besoin
+}

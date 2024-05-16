@@ -1,0 +1,46 @@
+syntax = "proto3";
+package voiture;
+
+// Définition du message voiture
+message Voiture {
+    string id = 1;
+    string marque = 2;
+    string modele = 3;
+    string description = 4;
+    // Ajouter d'autres champs de données pour les voitures au besoin
+}
+
+// Définition des messages de requête et de réponse pour les méthodes
+message GetVoitureRequest {
+    string voiture_id = 1;
+}
+
+message GetVoitureResponse {
+    Voiture voiture = 1;
+}
+
+message SearchVoituresRequest {
+    string query = 1;
+}
+
+message SearchVoituresResponse {
+    repeated Voiture voitures = 1;
+}
+
+message AddVoitureRequest {
+    string marque = 1;
+    string modele = 2;
+    string description = 3;
+}
+
+message AddVoitureResponse {
+    Voiture voiture = 1;
+}
+
+// Définition du service de voitures
+service VoitureService {
+    rpc GetVoiture(GetVoitureRequest) returns (GetVoitureResponse);
+    rpc SearchVoitures(SearchVoituresRequest) returns (SearchVoituresResponse);
+    rpc AddVoiture(AddVoitureRequest) returns (AddVoitureResponse);
+    // Ajouter d'autres méthodes au besoin
+}
