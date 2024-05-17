@@ -1,36 +1,27 @@
 # microservice_project
 
-#0a192fthis my project  microservice architecture pattern using nodejs , Mongo Db  , grpc , Rest , GraphQL and Kafka
-Thanks to MR Gontara Salah which has inspired and given really good knowledge for setting up this project.
+This is my project using a microservice architecture pattern with <span style="color:blue;">**Node.js**</span>, <span style="color:green;">**MongoDB**</span>, <span style="color:orange;">**gRPC**</span>, <span style="color:red;">**REST**</span>, <span style="color:purple;">**GraphQL**</span>, and <span style="color:brown;">**Kafka**</span>. Thanks to Mr. Gontara Salah for the inspiration and knowledge provided to set up this project.
 
 # Conception
 
-
 ![image!](Diagram.jpg)
 
-
 # Technologies
-**gRPC**: Used for efficient communication between microservices.
 
-
-**GraphQL**: Implemented for flexible and efficient querying of data.
-
-
-**REST**: RESTful APIs are used for exposing the services to external clients.
-
-**Kafka** : is a distributed event streaming platform used for building real-time data pipelines and applications that can handle large volumes of data efficiently.
-
+- <span style="color:orange;">**gRPC**</span>: Used for efficient communication between microservices.
+- <span style="color:purple;">**GraphQL**</span>: Implemented for flexible and efficient querying of data.
+- <span style="color:red;">**REST**</span>: RESTful APIs are used for exposing the services to external clients.
+- <span style="color:brown;">**Kafka**</span>: A distributed event streaming platform used for building real-time data pipelines and applications that can handle large volumes of data efficiently.
 
 # VOITURE MICROSERVICE
+
 Contains APIs related to creating a new voiture and getting voiture details.
 
-**Rest :**
-
+**REST:**
 
 ```http
- GET /voitures
+GET /voitures
 
-```
 **GraphQL :**
 
 
