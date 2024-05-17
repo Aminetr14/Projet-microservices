@@ -149,12 +149,12 @@ To start the ApiGateway server, run the following
 
 To start the Voiture server, run the following:
 
-`cd voitureMicroservice`
+
 `node voitureMicroservice.js`
 
 
 To start the Moto server, run the following:
 
-`cd motoMicroservice`
+
 `node motoMicroservice.js`
 
