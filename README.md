@@ -1,4 +1,4 @@
-# microservice_project
+# <span style="color:blue;">microservice_project</span>
 
 This is my project using a microservice architecture pattern with <span style="color:blue;">**Node.js**</span>, <span style="color:green;">**MongoDB**</span>, <span style="color:orange;">**gRPC**</span>, <span style="color:red;">**REST**</span>, <span style="color:purple;">**GraphQL**</span>, and <span style="color:brown;">**Kafka**</span>. Thanks to Mr. Gontara Salah for the inspiration and knowledge provided to set up this project.
 
@@ -21,6 +21,7 @@ Contains APIs related to creating a new voiture and getting voiture details.
 
 ```http
 GET /voitures
+
 
 **GraphQL :**
 
